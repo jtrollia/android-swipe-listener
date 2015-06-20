@@ -13,3 +13,5 @@ myLayout.setOnTouchListener(new SwipeListener(getActivity()) {
     }
 });
 ```
+
+Check http://stackoverflow.com/a/19506010/2735839

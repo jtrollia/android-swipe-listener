@@ -44,14 +44,13 @@ public class SwipeListener implements View.OnTouchListener {
                     return false;
                 if (e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
 
-                    // Close fragment
                     onSwipeLeft();
 
                 } else if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
                     return false;
                 }
             } catch (Exception e) {
-                // nothing
+                // ...
             }
 
             return super.onFling(e1, e2, velocityX, velocityY);
