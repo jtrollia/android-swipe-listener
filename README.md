@@ -1,9 +1,9 @@
 # android-swipe-listener
-Listen for swipe gestures.
+Detection of swipe gestures.
 
-```
+```java
 // Override method in an Activity
-RelativeLayout myLayout = (RelativeLayout) v.findViewById(R.id.{LAYOUT});
+RelativeLayout myLayout = (RelativeLayout) v.findViewById(R.id.<LAYOUT>);
 myLayout.setOnTouchListener(new SwipeListener(getActivity()) {
 
     @Override
@@ -14,4 +14,4 @@ myLayout.setOnTouchListener(new SwipeListener(getActivity()) {
 });
 ```
 
-Check http://stackoverflow.com/a/19506010/2735839
+Check the [original](http://stackoverflow.com/a/19506010/2735839) thread on SO.
